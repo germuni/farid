@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FARID — Herencia de Medio Oriente y vinos de autor en Villa Devoto, Buenos Aires. Fernández de Enciso 3791. Lunes a Sábado desde las 19:30. Reservas online.">
+  <title>FARID — Cocina de Medio Oriente y Vinos · Villa Devoto, Buenos Aires</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="restaurant">
+  <meta property="og:site_name"   content="FARID">
+  <meta property="og:title"       content="FARID — Herencia de Medio Oriente. Vinos de autor.">
+  <meta property="og:description" content="Cocina de Medio Oriente reinterpretada con precisión y una carta de vinos que desafía lo obvio. Villa Devoto, Buenos Aires.">
+  <meta property="og:url"         content="https://farid.com.ar/">
+  <meta property="og:image"       content="https://farid.com.ar/FOTOS/FARID_EN-33.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"      content="es_AR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="FARID — Herencia de Medio Oriente. Vinos de autor.">
+  <meta name="twitter:description" content="Cocina de Medio Oriente reinterpretada con precisión y una carta de vinos que desafía lo obvio. Villa Devoto, Buenos Aires.">
+  <meta name="twitter:image"       content="https://farid.com.ar/FOTOS/FARID_EN-33.webp">
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "FARID",
+    "description": "Cocina de Medio Oriente reinterpretada con precisión y una carta de vinos que desafía lo obvio.",
+    "url": "https://farid.com.ar",
+    "telephone": "+5491189894613643",
+    "servesCuisine": ["Middle Eastern", "Mediterranean"],
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Fernández de Enciso 3791",
+      "addressLocality": "Villa Devoto",
+      "addressRegion": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -34.5985,
+      "longitude": -58.5177
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "19:30",
+        "closes": "23:59"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "754",
+      "bestRating": "5"
+    },
+    "sameAs": [
+      "https://www.instagram.com/farid.dvt",
+      "https://maps.app.goo.gl/7WoC4wnmPGvzHP9JA"
+    ],
+    "image": "https://farid.com.ar/FOTOS/FARID_EN-33.webp",
+    "hasMap": "https://maps.app.goo.gl/7WoC4wnmPGvzHP9JA",
+    "reservationUrl": "https://monline.com.ar/FaridReservas"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">Farid</a>
+    <ul class="nav-links">
+      <li><a href="carta.html">Carta</a></li>
+      <li><a href="#espacio">Nosotros</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="https://monline.com.ar/FaridReservas" target="_blank" rel="noopener" class="nav-cta">Reservar</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── Mobile menu ── -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="carta.html"   class="mobile-link">Carta</a>
+    <a href="#espacio"     class="mobile-link">Nosotros</a>
+    <a href="#galeria"     class="mobile-link">Galería</a>
+    <a href="https://monline.com.ar/FaridReservas" target="_blank" rel="noopener" class="mobile-link">Reservar</a>
+  </div>
+
+  <main>
+
+    <!-- ── Hero ── -->
+    <section id="hero">
+      <div class="hero-bg" id="heroBg">
+        <img src="FOTOS/FARID_EN-33.webp" alt="Mesa completa en FARID" loading="eager" fetchpriority="high">
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Villa Devoto</p>
+        <h1 class="hero-title">FARID</h1>
+        <p class="hero-tagline">Herencia de Medio Oriente. Vinos de autor.</p>
+        <a href="https://monline.com.ar/FaridReservas" target="_blank" rel="noopener" class="btn-primary">Reservar mesa</a>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── Manifesto ── -->
+    <section id="manifesto">
+      <div class="manifesto-inner">
+        <p class="section-eyebrow reveal">Nuestra historia</p>
+        <blockquote class="manifesto-quote reveal reveal-delay-1">
+          "El sabor es memoria. Compartirlo, una decisión."
+        </blockquote>
+        <div class="section-divider reveal reveal-delay-2"></div>
+        <p class="manifesto-text reveal reveal-delay-3">
+          FARID reinterpreta el recetario de Medio Oriente desde la precisión y el respeto.
+          La untuosidad de un hummus perfecto, la profundidad ahumada del babaganush, la acidez
+          brillante del zumaque y la calidez del baharat abrazando bocados. Detrás de cada plato
+          hay técnica; al lado, siempre, una copa de vino elegida con el mismo rigor para elevar
+          la experiencia. No servimos comida para uno. Servimos excusas para que la mesa no se
+          termine nunca.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── Platos destacados ── -->
+    <section id="menu">
+      <div class="menu-header">
+        <div>
+          <p class="section-eyebrow reveal">Algunos favoritos</p>
+          <h2 class="section-title reveal reveal-delay-1">De nuestra carta</h2>
+        </div>
+        <a href="carta.html" class="btn-outline reveal reveal-delay-2">Ver carta completa</a>
+      </div>
+
+      <div class="menu-grid">
+
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="fotos%20nuevas/30-5-2.webp" alt="Keppe Crudo" loading="lazy">
+          </div>
+          <div class="menu-card-overlay">
+            <span class="menu-card-number">01</span>
+            <h3 class="menu-card-name">Keppe Crudo</h3>
+            <p class="menu-card-desc">Blend de ternera y cordero sobre pan manakish frito, labneh y hierbas frescas.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal reveal-delay-1">
+          <div class="menu-card-img">
+            <img src="fotos%20nuevas/22-5-1.webp" alt="Pankar" loading="lazy">
+          </div>
+          <div class="menu-card-overlay">
+            <span class="menu-card-number">02</span>
+            <h3 class="menu-card-name">Pankar</h3>
+            <p class="menu-card-desc">Remolachas asadas, tahine de ajo negro, dukkah y limón vivo.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal reveal-delay-2">
+          <div class="menu-card-img">
+            <img src="fotos%20nuevas/8-5-1.webp" alt="Pilaf en Parra" loading="lazy">
+          </div>
+          <div class="menu-card-overlay">
+            <span class="menu-card-number">03</span>
+            <h3 class="menu-card-name">Pilaf en Parra</h3>
+            <p class="menu-card-desc">Hojas de parra rellenas de arroz pilaf, servidas con toum.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal">
+          <div class="menu-card-img">
+            <img src="fotos%20nuevas/20-5-41.webp" alt="Langostinos en Muhammara" loading="lazy">
+          </div>
+          <div class="menu-card-overlay">
+            <span class="menu-card-number">04</span>
+            <h3 class="menu-card-name">Langostinos</h3>
+            <p class="menu-card-desc">Langostinos en muhammara — salsa de ají rojo asado, nueces y especias.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal reveal-delay-1">
+          <div class="menu-card-img">
+            <img src="fotos%20nuevas/5-5-1.webp" alt="Falafel" loading="lazy">
+          </div>
+          <div class="menu-card-overlay">
+            <span class="menu-card-number">05</span>
+            <h3 class="menu-card-name">Falafel</h3>
+            <p class="menu-card-desc">Bocaditos crocantes de garbanzos, hummus de coliflor y pickles.</p>
+          </div>
+        </div>
+
+        <div class="menu-card reveal reveal-delay-2">
+          <div class="menu-card-img">
+            <img src="fotos%20nuevas/20-5-3.webp" alt="Backlamisu" loading="lazy">
+          </div>
+          <div class="menu-card-overlay">
+            <span class="menu-card-number">06</span>
+            <h3 class="menu-card-name">Backlamisu</h3>
+            <p class="menu-card-desc">Masa filo, nuez y pistacho, almíbar de café especiado con mascarpone de yogurt y tahine.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu-cta reveal">
+        <a href="carta.html" class="btn-primary">Ver carta completa y vinos</a>
+      </div>
+    </section>
+
+    <!-- ── El Espacio ── -->
+    <section id="espacio">
+      <div class="espacio-text">
+        <p class="section-eyebrow reveal">El espacio</p>
+        <h2 class="section-title reveal reveal-delay-1">Del Levante Mediterráneo<br>a Devoto</h2>
+        <div class="section-divider reveal reveal-delay-2"></div>
+        <p class="reveal reveal-delay-3">
+          Escondido en Fernández de Enciso, FARID no es una parada en el camino,
+          sino el destino final de una búsqueda deliberada.
+        </p>
+        <p class="reveal reveal-delay-4">
+          El espacio invita a la intimidad donde el servicio acompaña sin interrumpir.
+          Una cocina impulsada por ingredientes de estación, una cava que desafía lo obvio
+          y una premisa innegociable: el tiempo transcurre distinto cuando los platos ocupan
+          el centro de la mesa.
+        </p>
+        <a href="https://monline.com.ar/FaridReservas" target="_blank" rel="noopener"
+           class="btn-outline reveal reveal-delay-4" style="margin-top:2.5rem; align-self:flex-start;">
+          Hacer una reserva
+        </a>
+      </div>
+      <div class="espacio-images">
+        <div class="img-wrap reveal">
+          <img src="FOTOS/FARID_EN-75.webp" alt="Sala de FARID" loading="lazy">
+        </div>
+        <div class="img-wrap reveal reveal-delay-1">
+          <img src="FOTOS/FARID_EN-50.webp" alt="Experiencia en FARID" loading="lazy">
+        </div>
+        <div class="img-wrap reveal reveal-delay-2">
+          <img src="FOTOS/FARID_EN-5.webp" alt="Platos en FARID" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Galería ── -->
+    <section id="galeria">
+      <div class="galeria-header">
+        <p class="section-eyebrow reveal">Galería</p>
+        <h2 class="section-title reveal reveal-delay-1">La mesa en imágenes</h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-2.webp"  alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-55.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-8.webp"  alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-65.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-12.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-45.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-15.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-78.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-25.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-68.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-35.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-80.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-3.webp"  alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-48.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-22.webp" alt="FARID" loading="lazy"></div>
+        <div class="gallery-item"><img src="FOTOS/FARID_EN-72.webp" alt="FARID" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- ── Reseñas ── -->
+    <section id="resenas">
+      <div class="resenas-inner">
+        <p class="section-eyebrow reveal" style="text-align:center;">Lo que dicen</p>
+
+        <div class="resenas-rating reveal reveal-delay-1">
+          <p class="resenas-score">4,8</p>
+          <div>
+            <div class="stars" style="font-size:1.1rem;">★★★★★</div>
+            <p class="resenas-total">754 reseñas en Google</p>
+          </div>
+        </div>
+
+        <div class="resenas-grid">
+
+          <div class="resena-card reveal">
+            <div class="stars">★★★★★</div>
+            <p class="resena-texto">
+              "Reservar antes. Excelente la comida, con toques muy particulares. Increíble el pilaf, el hummus, los shawarmitas y el lehme, para soñar. Súper recomendable."
+            </p>
+            <p class="resena-autor">
+              <a href="https://maps.app.goo.gl/7WoC4wnmPGvzHP9JA" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--border);">— Gabriela A. · Google</a>
+            </p>
+          </div>
+
+          <div class="resena-card reveal reveal-delay-1">
+            <div class="stars">★★★★★</div>
+            <p class="resena-texto">
+              "Excelente por donde lo mires. Les apasiona lo que hacen y se nota en los platos, que tienen lo mejor de la cocina tradicional y la contemporánea. Aparte, una carta de vinos cuidadísima que los hace probablemente el mejor lugar de comida árabe en la ciudad."
+            </p>
+            <p class="resena-autor">
+              <a href="https://maps.app.goo.gl/7WoC4wnmPGvzHP9JA" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--border);">— Alejandro A. · Google</a>
+            </p>
+          </div>
+
+          <div class="resena-card reveal reveal-delay-2">
+            <div class="stars">★★★★★</div>
+            <p class="resena-texto">
+              "Amo Farid. La atención es espectacular y súper personalizada, con cada plato muy bien explicado por los mozos. La comida es riquísima, original y viene en platitos para comer un poco de todo. El lugar es chiquito pero muy acogedor."
+            </p>
+            <p class="resena-autor">
+              <a href="https://maps.app.goo.gl/7WoC4wnmPGvzHP9JA" target="_blank" rel="noopener" style="color:inherit;border-bottom:1px solid var(--border);">— Pilar G. · Google</a>
+            </p>
+          </div>
+
+        </div>
+
+        <div class="resenas-cta reveal">
+          <a href="https://maps.app.goo.gl/7WoC4wnmPGvzHP9JA" target="_blank" rel="noopener" class="resenas-link">
+            Ver las 754 reseñas en Google
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Reservas ── -->
+    <section id="reservas">
+      <div class="reservas-inner">
+        <p class="section-eyebrow reveal">Visitanos</p>
+        <h2 class="section-title reveal reveal-delay-1">Reservá tu mesa</h2>
+        <div class="section-divider reveal reveal-delay-2"></div>
+
+        <div class="reservas-info">
+          <div class="reservas-block reveal">
+            <p class="label">Horario</p>
+            <p class="value">Lunes a Sábado<br>desde las 19:30 hs</p>
+          </div>
+          <div class="reservas-block reveal reveal-delay-1">
+            <p class="label">Ubicación</p>
+            <p class="value">Fernández de Enciso 3791<br>Devoto · Buenos Aires</p>
+          </div>
+          <div class="reservas-block reveal reveal-delay-2">
+            <p class="label">Seguinos</p>
+            <p class="value">
+              <a href="https://www.instagram.com/farid.dvt" target="_blank" rel="noopener"
+                 style="color:inherit; border-bottom:1px solid var(--gold-dim);">@farid.dvt</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="reservas-btns reveal reveal-delay-3">
+          <a href="https://monline.com.ar/FaridReservas" target="_blank" rel="noopener" class="btn-primary">
+            Reservar online
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=%2B19894613643&text&type=phone_number&app_absent=0"
+             target="_blank" rel="noopener" class="btn-outline btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="https://maps.app.goo.gl/7WoC4wnmPGvzHP9JA" target="_blank" rel="noopener" class="btn-outline">
+            Cómo llegar
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <span class="footer-logo">Farid</span>
+    <p class="footer-copy">© 2025 FARID · Cocina de Medio Oriente y Vinos · Devoto, Buenos Aires</p>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/farid.dvt" target="_blank" rel="noopener">@farid.dvt</a>
+    </div>
+  </footer>
+
+  <script src="main.js?v=7"></script>
+</body>
+</html>

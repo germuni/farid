@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carta completa de FARID — Cocina de Medio Oriente y Vinos. Fernández de Enciso 3791, Devoto, Buenos Aires.">
+  <title>Carta — FARID · Cocina de Medio Oriente y Vinos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=7">
+  <style>
+    .carta-page-hero {
+      background: var(--bg-elevated);
+      padding: calc(var(--nav-h) + 4rem) clamp(1.5rem, 5vw, 4rem) 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .carta-page-body {
+      background: var(--bg);
+      padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 5vw, 4rem) clamp(4rem, 8vw, 7rem);
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .carta-note {
+      font-size: 0.72rem;
+      font-style: italic;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 2.5rem;
+      letter-spacing: 0.04em;
+    }
+    .carta-cta {
+      text-align: center;
+      padding: 4rem 0 2rem;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+    }
+    .carta-cta-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Nav ── -->
+  <nav id="nav" class="scrolled">
+    <a href="index.html" class="nav-logo">Farid</a>
+    <ul class="nav-links">
+      <li><a href="carta.html" style="color:var(--gold)">Carta</a></li>
+      <li><a href="index.html#espacio">Nosotros</a></li>
+      <li><a href="index.html#galeria">Galería</a></li>
+      <li><a href="https://monline.com.ar/FaridReservas" target="_blank" rel="noopener" class="nav-cta">Reservar</a></li>
+    </ul>
+    <button class="nav-hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="carta.html"         class="mobile-link">Carta</a>
+    <a href="index.html#espacio" class="mobile-link">Nosotros</a>
+    <a href="index.html#galeria" class="mobile-link">Galería</a>
+    <a href="https://monline.com.ar/FaridReservas" target="_blank" rel="noopener" class="mobile-link">Reservar</a>
+  </div>
+
+  <main>
+
+    <div class="carta-page-hero">
+      <p class="section-eyebrow">FARID · Devoto, Buenos Aires</p>
+      <h1 class="section-title">Carta</h1>
+      <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.75rem;">
+        Lunes a Sábado · desde las 19:30 hs &nbsp;·&nbsp; Fernández de Enciso 3791
+      </p>
+    </div>
+
+    <div class="carta-page-body">
+
+      <div class="carta-tabs" role="tablist">
+        <button class="tab-btn active" role="tab" aria-selected="true"  data-tab="comida"  id="tab-btn-comida">Carta</button>
+        <button class="tab-btn"        role="tab" aria-selected="false" data-tab="vinos"   id="tab-btn-vinos">Vinos</button>
+        <button class="tab-btn"        role="tab" aria-selected="false" data-tab="bebidas" id="tab-btn-bebidas">Bebidas</button>
+      </div>
+
+
+      <!-- ══ TAB: CARTA ══ -->
+      <div class="tab-panel active" id="tab-comida" role="tabpanel">
+
+        <div class="menu-category">
+          <h2 class="category-title">Para compartir</h2>
+          <div class="dish-list">
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Hummus Rezene</span>
+                <span class="dish-desc">Cremoso de garbanzos con hinojo confitado y crudo, y un toque de sumac</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$16.000</span>
+                <div class="dish-tags"><span class="tag tag-v">V</span><span class="tag tag-g">SG</span></div>
+              </div>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Babaganush</span>
+                <span class="dish-desc">Pure de berenjenas ahumadas, miel de granada, aceite de chile, granada fresca y cilantro</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$16.000</span>
+                <div class="dish-tags"><span class="tag tag-v">V</span><span class="tag tag-g">SG</span></div>
+              </div>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Pan Lavash XL</span>
+                <span class="dish-desc">Calentito con oliva</span>
+              </div>
+              <span class="dish-price">$2.800</span>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Falafel</span>
+                <span class="dish-desc">Bocaditos crocantes de garbanzos, hummus de coliflor y pickles</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$15.000</span>
+                <div class="dish-tags"><span class="tag tag-v">V</span><span class="tag tag-g">SG</span></div>
+              </div>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Papas</span>
+                <span class="dish-desc">Chips de papa con sumac y aderezo de tahine</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$12.500</span>
+                <div class="dish-tags"><span class="tag tag-v">V</span><span class="tag tag-g">SG</span></div>
+              </div>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Halloumi &amp; Membrillo</span>
+                <span class="dish-desc">Halloumi grillado sobre chutney de membrillo y pasta de pistacho</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$19.000</span>
+                <div class="dish-tags"><span class="tag tag-g">SG</span></div>
+              </div>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Pankar</span>
+                <span class="dish-desc">Remolachas asadas, tahine de ajo negro, dukkah y limón vivo</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$16.000</span>
+                <div class="dish-tags"><span class="tag tag-v">V</span><span class="tag tag-g">SG</span></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h2 class="category-title">De la cocina</h2>
+          <div class="dish-list">
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Lehme de Queso &amp; Huevo</span>
+                <span class="dish-desc">Masa abierta con mix de quesos, yema y manteca de ajo</span>
+              </div>
+              <span class="dish-price">$20.000</span>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Pilaf en Parra</span>
+                <span class="dish-desc">Hojas de parra grilladas, rellenas de arroz pilaf y toum</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$14.000</span>
+                <div class="dish-tags"><span class="tag tag-g">SG</span></div>
+              </div>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Shawarmitas Pollo</span>
+                <span class="dish-desc">Pollo especiado, chicharrón, tomate asado, verduras frescas y yogurt natural, en masa grillada</span>
+              </div>
+              <span class="dish-price">$22.500</span>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Shawarmitas Veggie</span>
+                <span class="dish-desc">Falafel, chicharrón, tomate asado, verduras frescas y yogurt natural, en masa grillada</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$22.500</span>
+                <div class="dish-tags"><span class="tag tag-v">V</span></div>
+              </div>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Keppe Crudo</span>
+                <span class="dish-desc">Blend de ternera y cordero sobre pan manakish con labneh</span>
+              </div>
+              <span class="dish-price">$22.000</span>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Langostinos &amp; Muhammara</span>
+                <span class="dish-desc">Langostinos grillados sobre muhammara de calahorra tibia y nueces fritas</span>
+              </div>
+              <span class="dish-price">$18.000</span>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Ojo de Bife Basterma</span>
+                <span class="dish-desc">Ojo de bife cocido a baja temperatura y grillado, sobre labneh especiado</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$28.000</span>
+                <div class="dish-tags"><span class="tag tag-g">SG</span></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="menu-category">
+          <h2 class="category-title">Postres</h2>
+          <div class="dish-list">
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Backlamisu</span>
+                <span class="dish-desc">Masa filo, nuez y pistacho, almíbar de café especiado con mascarpone de yogurt y tahine</span>
+              </div>
+              <span class="dish-price">$15.000</span>
+            </div>
+
+            <div class="dish-row">
+              <div class="dish-info">
+                <span class="dish-name">Helado Chocolate &amp; Dátil</span>
+                <span class="dish-desc">Cremoso de chocolate a base de leche de cabra, aceite de cardamomo y dátil asado</span>
+              </div>
+              <div style="display:flex;flex-direction:column;align-items:flex-end;gap:0.3rem">
+                <span class="dish-price">$15.000</span>
+                <div class="dish-tags"><span class="tag tag-g">SG</span></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <p class="menu-note">
+          <span class="tag tag-v" style="font-size:0.6rem">V</span> Vegano &nbsp;·&nbsp;
+          <span class="tag tag-g" style="font-size:0.6rem">SG</span> Sin TACC &nbsp;·&nbsp;
+          Precios en pesos argentinos · IVA incluido
+        </p>
+
+      </div><!-- /tab-comida -->
+
+
+      <!-- ══ TAB: VINOS ══ -->
+      <div class="tab-panel" id="tab-vinos" role="tabpanel">
+        <div class="vinos-grid">
+
+          <!-- Columna izquierda -->
+          <div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Blancos</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Centenario — Nido del Tigre</span><span class="dish-desc">Torrontés · Calingasta, San Juan</span></div><span class="dish-price">$32.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Capítulo I — Ruca Malen</span><span class="dish-desc">Chardonnay · Valle de Uco, Mendoza</span></div><span class="dish-price">$18.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Turbio — Ravera Wines</span><span class="dish-desc">Sauvignon Blanc · Tupungato, Mendoza</span></div><span class="dish-price">$27.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Socavones Reserva — Terra Camiare</span><span class="dish-desc">Blend de Blancas · Colonia Caroya, Córdoba</span></div><span class="dish-price">$34.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Nodo Agua</span><span class="dish-desc">Chardonnay · Gualtallary, Valle de Uco, Mendoza</span></div><span class="dish-price">$32.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Pedro Jiménez — La Cayetana</span><span class="dish-desc">Pedro Jiménez · Lavalle, Mendoza</span></div><span class="dish-price">$26.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Partida Limitada — Canopus</span><span class="dish-desc">Semillón · La Consulta, Mendoza</span></div><span class="dish-price">$35.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Blanc de Blancas — Antropo</span><span class="dish-desc">Torrontés/Chardonnay · Valle Templado, Jujuy</span></div><span class="dish-price">$25.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Dragon del Desierto — Ver Sacrum</span><span class="dish-desc">Viognier/Marsanne/Pedro Jiménez · Valle de Uco, Mendoza</span></div><span class="dish-price">$37.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Tortoka 2018 — Mil Suelos</span><span class="dish-desc">Chenin Blanc/Semillon/Chardonnay · Maipú, Mendoza</span></div><span class="dish-price">$54.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Geisha de Jade — Ver Sacrum</span><span class="dish-desc">Marsanne/Roussanne · Valle de Uco, Mendoza</span></div><span class="dish-price">$90.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Viejas Viñas — Chateau d'Ancon</span><span class="dish-desc">Sauvignon Blanc · La Carrera, Valle de Uco, Mendoza</span></div><span class="dish-price">$68.000</span></div>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Naranjos</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Naranjo — Solito Va</span><span class="dish-desc">Pedro Ximénez · Valle de Uco, Mendoza</span></div><span class="dish-price">$28.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Appellation — Cadus</span><span class="dish-desc">Gewurztraminer · Los Chacayes, Mendoza</span></div><span class="dish-price">$38.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Peq. Fermentaciones — El Porvenir</span><span class="dish-desc">Torrontés · Cafayate, Salta</span></div><span class="dish-price">$36.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Paso a Paso</span><span class="dish-desc">Orange Field Blend · Valle de Uco, Mendoza</span></div><span class="dish-price">$30.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Vórtice — Estancia Las Cañitas</span><span class="dish-desc">Sauvignon Blanc · Calamuchita, Córdoba</span></div><span class="dish-price">$56.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Livvera — Escala Humana Wines</span><span class="dish-desc">Malvasía · Tupungato, Mendoza</span></div><span class="dish-price">$36.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Amber — Alma Gemela</span><span class="dish-desc">Roussanne · Lavalle, Mendoza</span></div><span class="dish-price">$39.000</span></div>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Rosados y Claretes</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Indama — Terra Camiare</span><span class="dish-desc">Isabella · Colonia Caroya, Córdoba</span></div><span class="dish-price">$26.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Flora — Teho</span><span class="dish-desc">Pinot Noir · Valle de Uco, Mendoza</span></div><span class="dish-price">$29.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Rosa di Rosso — Bira</span><span class="dish-desc">Sangiovese/Syrah · Valle de Uco, Mendoza</span></div><span class="dish-price">$27.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Pintom Subversivo — Canopus</span><span class="dish-desc">Pinot Noir · El Cepillo, Mendoza</span></div><span class="dish-price">$58.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Tradicional — Macollo</span><span class="dish-desc">Blend de Criollas · San Martín, Mendoza</span></div><span class="dish-price">$35.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Capítulo II — Ruca Malen</span><span class="dish-desc">Garnacha y Merlot · Valle de Uco, Mendoza</span></div><span class="dish-price">$29.000</span></div>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Burbujas</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Peq. Producciones — Escorihuela</span><span class="dish-desc">Pinot Noir · Mét. Champenoise</span></div><span class="dish-price">$48.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Grand Cuvée — Philippe Caraguel</span><span class="dish-desc">Pinot Noir/Chardonnay · Mét. Champenoise</span></div><span class="dish-price">$60.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">El Favorito — El Relator</span><span class="dish-desc">Pinot/Semillon/Chardonnay · Mét. Champenoise</span></div><span class="dish-price">$49.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Kung Fu — Riccitelli</span><span class="dish-desc">Pinot/Malbec · Pét-Nat</span></div><span class="dish-price">$45.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Abrazo Nature — Casa Yagüe</span><span class="dish-desc">Sauvignon Blanc/Semillon/Chardonnay · Mét. Champenoise</span></div><span class="dish-price">$140.000</span></div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Columna derecha -->
+          <div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Tintos Ligeros</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Pérgolas — Cara Sur</span><span class="dish-desc">Criollas · Valle de Calingasta, San Juan</span></div><span class="dish-price">$27.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Tigerstone — Estancia Los Cardones</span><span class="dish-desc">Garnacha · Cafayate, Salta</span></div><span class="dish-price">$33.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Livvera B — Escala Humana Wines</span><span class="dish-desc">Bequignol · Tupungato, Mendoza</span></div><span class="dish-price">$36.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Gran Reserva — Humberto Canale</span><span class="dish-desc">Pinot Noir · General Roca, Río Negro</span></div><span class="dish-price">$49.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Eggo Filoso — Zorzal</span><span class="dish-desc">Pinot Noir · Tupungato, Mendoza</span></div><span class="dish-price">$36.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Blend de Terroir — Terra Camiare</span><span class="dish-desc">Pinot Ancellota · Pedemonte, Córdoba</span></div><span class="dish-price">$42.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Río Frío — Casa Yagüe</span><span class="dish-desc">Pinot Noir/Cabernet Franc · Trevelín, Chubut</span></div><span class="dish-price">$155.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">GSM — Ver Sacrum</span><span class="dish-desc">Garnacha/Syrah/Monastrell · Los Chacayes, Mendoza</span></div><span class="dish-price">$37.000</span></div>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Tintos con Cuerpo</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Tanito — Bira</span><span class="dish-desc">Malbec/Sangiovese/Cabernet Franc · Valle de Uco, Mendoza</span></div><span class="dish-price">$28.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Alma Gemela</span><span class="dish-desc">Bonarda · Lavalle, Mendoza</span></div><span class="dish-price">$27.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Appellation — Cadus</span><span class="dish-desc">Cabernet Sauvignon · Tupungato, Mendoza</span></div><span class="dish-price">$38.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Las Bases — Raquis</span><span class="dish-desc">Malbec · Valle de Uco y Luján de Cuyo, Mendoza</span></div><span class="dish-price">$75.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Old Vines — Riccitelli</span><span class="dish-desc">Merlot · Alto Valle, Río Negro</span></div><span class="dish-price">$120.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Brunetto — Bira</span><span class="dish-desc">Sangiovese/Merlot/Syrah · Valle de Uco, Mendoza</span></div><span class="dish-price">$38.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Cabernet Franc — La Cayetana</span><span class="dish-desc">Cabernet Franc · Los Chacayes, Mendoza</span></div><span class="dish-price">$35.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Cielo Arriba — Mil Suelos</span><span class="dish-desc">Malbec/Cabernet Franc/Syrah · Tilcara, Jujuy</span></div><span class="dish-price">$67.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Calcáreo — Super Uco</span><span class="dish-desc">Malbec · Gualtallary, Mendoza</span></div><span class="dish-price">$41.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Sikuri — Fernando Dupont</span><span class="dish-desc">Syrah · Maimara, Jujuy</span></div><span class="dish-price">$40.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Bonjolais — Magna Montis</span><span class="dish-desc">Bonarda/Pedro Giménez · Tupungato, Mendoza</span></div><span class="dish-price">$32.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Gran Reserva — Humberto Canale</span><span class="dish-desc">Merlot · General Roca, Río Negro</span></div><span class="dish-price">$45.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Facón — Bad Brothers</span><span class="dish-desc">Cabernet Franc · Cafayate, Salta</span></div><span class="dish-price">$60.000</span></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- /vinos-grid -->
+
+        <p class="menu-note">Precios por botella · Carta sujeta a disponibilidad de stock</p>
+
+      </div><!-- /tab-vinos -->
+
+
+      <!-- ══ TAB: BEBIDAS ══ -->
+      <div class="tab-panel" id="tab-bebidas" role="tabpanel">
+        <div class="vinos-grid">
+
+          <div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Copas</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Capítulo I — Ruca Malen</span><span class="dish-desc">Chardonnay · Tupungato, Mendoza</span></div><span class="dish-price">$6.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Naranjo — El Porvenir</span><span class="dish-desc">Torrontés · Cafayate, Salta</span></div><span class="dish-price">$9.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Indama — Terra Camiare</span><span class="dish-desc">Isabella · Pedemonte, Córdoba</span></div><span class="dish-price">$7.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">State — Humberto Canale</span><span class="dish-desc">Pinot Noir · General Roca, Río Negro</span></div><span class="dish-price">$8.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Ripasso — Nido del Tigre</span><span class="dish-desc">Malbec/Torrontés · Calingasta, San Juan</span></div><span class="dish-price">$8.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Espumoso</span><span class="dish-desc">Findes de Burbujas · Consultar</span></div><span class="dish-price">$8.000</span></div>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Espumante</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Espumante Brut — Nieto Senetiner</span><span class="dish-desc">750 ml</span></div><span class="dish-price">$25.000</span></div>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Sin Alcohol</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Agua — SLVDR</span><span class="dish-desc">Con o sin gas · 473 ml</span></div><span class="dish-price">$4.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Limonada</span><span class="dish-desc">450 ml</span></div><span class="dish-price">$6.500</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Coca Cola</span><span class="dish-desc">Original / Zero · 354 ml</span></div><span class="dish-price">$4.000</span></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Cervezas</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">AIPA — Cavalchini</span><span class="dish-desc">American India Pale Ale · 6,3%</span></div><span class="dish-price">$7.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Munich — Cavalchini</span><span class="dish-desc">Pseudo lager · 5,2%</span></div><span class="dish-price">$6.200</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">APA — Cavalchini</span><span class="dish-desc">American Pale Ale · 5,2%</span></div><span class="dish-price">$6.500</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Honey — Oslo Brewing</span><span class="dish-desc">Miel · 0,0%</span></div><span class="dish-price">$4.500</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Frambiscus — Oslo Brewing</span><span class="dish-desc">Frambuesa e hibiscus · 0,0%</span></div><span class="dish-price">$4.500</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Cerveza — Oslo Brewing</span><span class="dish-desc">473 ml</span></div><span class="dish-price">$4.500</span></div>
+              </div>
+            </div>
+
+            <div class="menu-category">
+              <h2 class="category-title">Infusiones</h2>
+              <div class="dish-list">
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Té de Menta</span></div><span class="dish-price">$4.000</span></div>
+                <div class="dish-row"><div class="dish-info"><span class="dish-name">Café</span></div><span class="dish-price">$4.000</span></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div><!-- /vinos-grid -->
+
+        <p class="carta-note">Si hay vino en tu copa, el agua es nuestra cortesía.</p>
+
+      </div><!-- /tab-bebidas -->
+
+
+      <!-- CTA -->
+      <div class="carta-cta">
+        <p class="section-eyebrow" style="text-align:center;">¿Ya elegiste?</p>
+        <div class="carta-cta-btns">
+          <a href="https://monline.com.ar/FaridReservas" target="_blank" rel="noopener" class="btn-primary">Reservar mesa</a>
+          <a href="https://api.whatsapp.com/send/?phone=%2B19894613643&text&type=phone_number&app_absent=0"
+             target="_blank" rel="noopener" class="btn-outline btn-wa">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:inline;vertical-align:middle;margin-right:0.4rem"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /carta-page-body -->
+  </main>
+
+  <footer>
+    <span class="footer-logo">Farid</span>
+    <p class="footer-copy">© 2025 FARID · Cocina de Medio Oriente y Vinos · Devoto, Buenos Aires</p>
+    <div class="footer-social">
+      <a href="https://www.instagram.com/farid.dvt" target="_blank" rel="noopener">@farid.dvt</a>
+    </div>
+  </footer>
+
+  <script src="main.js?v=7"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dev config
+.claude/
+
+# JPGs originales (se usan las versiones WebP)
+FOTOS/*.jpg
+FOTOS/*.JPG
+"Fotos nuevas"/*.jpg
+"Fotos nuevas"/*.JPG
+
+# JPGs sueltos
+*.jpg
+*.JPG
+
+# Archivos internos
+*.pdf
+*.pptx
+*.mp4
