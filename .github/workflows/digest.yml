@@ -1,0 +1,29 @@
+name: Resumen diario de reservas 18:30
+
+on:
+  schedule:
+    # 21:30 UTC = 18:30 ART (Argentina UTC-3), Lunes a Sábado
+    - cron: '30 21 * * 1-6'
+  workflow_dispatch:   # permite dispararlo manualmente desde GitHub
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install pytz
+
+      - name: Enviar resumen por WhatsApp
+        env:
+          FIREBASE_API_KEY:    ${{ secrets.FIREBASE_API_KEY }}
+          FIREBASE_PROJECT_ID: farid-reservas
+          CALLMEBOT_API_KEY:   ${{ secrets.CALLMEBOT_API_KEY }}
+          WHATSAPP_NUMBER:     ${{ secrets.WHATSAPP_NUMBER }}
+        run: python .github/scripts/digest.py

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — FARID Reservas</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reservas.css">
+</head>
+<body>
+
+  <!-- ── Login ── -->
+  <div id="loginScreen">
+    <div class="res-card" style="max-width:360px;width:100%;margin-top:4rem;">
+      <h2 class="res-step-title" style="margin-bottom:.25rem;">Admin · FARID</h2>
+      <p class="res-step-subtitle">Panel de reservas</p>
+      <div class="res-field">
+        <label class="res-label">Contraseña</label>
+        <input class="res-input" id="pwInput" type="password" placeholder="••••••••"
+               onkeydown="if(event.key==='Enter') login()">
+      </div>
+      <button class="res-btn-primary" onclick="login()">Ingresar</button>
+      <div id="loginErr"></div>
+    </div>
+  </div>
+
+  <!-- ── App ── -->
+  <div id="adminApp" style="display:none;">
+    <div class="admin-body">
+
+      <div class="admin-header">
+        <span class="admin-title">FARID · Reservas</span>
+        <button class="admin-tab" onclick="logout()"
+                style="border-color:var(--error);color:var(--error);">Salir</button>
+      </div>
+
+      <div class="admin-tabs">
+        <button class="admin-tab active" id="tab-reservas"  onclick="showTab('reservas')">Reservas</button>
+        <button class="admin-tab"        id="tab-bloqueos"  onclick="showTab('bloqueos')">Bloqueos</button>
+        <button class="admin-tab"        id="tab-config"    onclick="showTab('config')">Configuración</button>
+      </div>
+
+      <!-- ── RESERVAS ── -->
+      <div id="panel-reservas">
+        <div class="admin-date-nav">
+          <button onclick="changeDay(-1)">‹</button>
+          <input type="date" class="admin-date-input" id="adminDate" onchange="loadReservas()">
+          <button onclick="changeDay(1)">›</button>
+          <button onclick="setToday()" style="font-size:.8rem;padding:.4rem .6rem;">Hoy</button>
+        </div>
+        <div id="statsBar" class="admin-stats"></div>
+        <div id="reservasList"></div>
+      </div>
+
+      <!-- ── BLOQUEOS ── -->
+      <div id="panel-bloqueos" style="display:none;">
+        <div style="display:flex;gap:.75rem;flex-wrap:wrap;align-items:flex-end;margin-bottom:1.5rem;">
+          <div class="res-field" style="margin:0;flex:1;min-width:160px;">
+            <label class="res-label">Fecha</label>
+            <input class="res-input" type="date" id="blqFecha" style="color-scheme:dark;">
+          </div>
+          <div class="res-field" style="margin:0;flex:2;min-width:180px;">
+            <label class="res-label">Motivo (opcional)</label>
+            <input class="res-input" type="text" id="blqMotivo" placeholder="Evento privado, feriado…">
+          </div>
+          <button class="admin-btn-save" onclick="addBloqueo()">Bloquear fecha</button>
+        </div>
+        <div id="bloqueosList"></div>
+      </div>
+
+      <!-- ── CONFIG ── -->
+      <div id="panel-config" style="display:none;">
+        <div id="configPanel"></div>
+        <div style="margin-top:1.5rem;display:flex;gap:.75rem;align-items:center;">
+          <button class="admin-btn-save" onclick="saveConfig()">Guardar cambios</button>
+          <span id="configMsg" style="font-size:.85rem;color:var(--muted);"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

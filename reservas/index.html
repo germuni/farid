@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar mesa — FARID</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reservas.css">
+</head>
+<body>
+
+  <header class="res-header">
+    <a href="../index.html" class="res-logo">FARID</a>
+    <span class="res-subtitle">Cocina de Medio Oriente · Villa Devoto</span>
+  </header>
+
+  <main class="res-card" id="resCard">
+    <div class="res-loading">
+      <div class="res-spinner"></div>
+      Cargando…
+    </div>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="reservas.js"></script>
+</body>
+</html>
